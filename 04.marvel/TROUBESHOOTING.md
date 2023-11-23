@@ -20,4 +20,6 @@ Since it's an initialisation script, I would recommend starting with a clean sla
 
 ### Tailwind installation
 
-Instead of installing the latest version with the `pnpm install -D tailwindcss postcss autoprefixer` command, you can use the same versions with the following command: `pnpm install -D tailwindcss@3.3.2 postcss@8.4.23 autoprefixer@10.4.14`
+Instead of installing the latest versions with the `pnpm install -D tailwindcss postcss autoprefixer` command, you can use the same versions with the following command: `pnpm install -D tailwindcss@3.3.2 postcss@8.4.23 autoprefixer@10.4.14`
+
+💡 Using `pnpm` you may also have to use the `-shamefully-hoist` flag in your command to create a flat `node_modules` directory structure.
