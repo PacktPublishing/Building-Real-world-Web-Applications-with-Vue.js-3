@@ -31,7 +31,7 @@ import ExerciseGrouping from "./ExerciseGrouping.vue";
 const routines: Ref<Routine[]> = ref([]);
 const showDialogRoutine: Ref<boolean> = ref(false);
 
-const addRoutineToExcercise = (newRoutine: any) => {
+const addRoutineToExercise= (newRoutine: any) => {
   showDialogRoutine.value = false;
   routines.value.push(newRoutine);
 };
@@ -66,7 +66,7 @@ const saveWorkout = () => {
 </script>
 <template>
   <v-container>
-    <v-row class="align-center justify-space-between mb-6">
+    <v-row class="mb-6 align-center justify-space-between">
       <v-btn @click="showDialogDate = true">
         <span v-if="selectedDate">Change date</span>
         <span v-else>Select date</span>
@@ -104,7 +104,7 @@ const saveWorkout = () => {
       <v-dialog v-model="showDialogRoutine" fullscreen>
         <v-card>
           <v-card-text>
-            <add-routine @add="addRoutineToExcercise" />
+            <add-routine @add="addRoutineToExercise" />
           </v-card-text>
           <v-card-actions>
             <v-btn color="primary" @click="showDialogRoutine = false"
