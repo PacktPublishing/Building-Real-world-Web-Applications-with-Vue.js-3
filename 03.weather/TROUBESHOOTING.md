@@ -18,3 +18,20 @@ Instead of initialising the app with `npm init vue@latest` you could pinpoint th
 
 Since it's an initialisation script, I would recommend starting with a clean slate instead of changing the version after installation.
 
+### Syntax error
+
+On **page 38 in the book**, when defining the `q` constant by combining the latitude and longitude in a template string, the backticks '`' are accidentally omitted from the instruction.
+
+The instruction in the book shows:
+
+```js
+const q = ${latitude},${longitude};
+```
+
+The correct notation should be (note the backticks surrounding the template string):
+
+```js
+const q = `${latitude},${longitude}`;
+```
+
+Omitting the template stings will result in a syntax error.
