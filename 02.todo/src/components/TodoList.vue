@@ -63,8 +63,8 @@ const toggleItemChecked = (item: Item): void => {
 }
 
 onMounted(() => {
-  initListItems()
   storageItems.value = getFromStorage()
+  initListItems()
 })
 </script>
 <template>
