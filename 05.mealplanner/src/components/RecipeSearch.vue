@@ -32,7 +32,7 @@ const recipeSelected = (result: RecipeResults): void => {
 </script>
 
 <template>
-  <v-car flat>
+  <v-card flat>
     <v-card-text>
       <v-text-field v-model="searchQuery" label="Search"></v-text-field>
     </v-card-text>
@@ -44,7 +44,7 @@ const recipeSelected = (result: RecipeResults): void => {
         }}</v-list-item-title>
       </v-list-item>
     </v-list>
-  </v-car>
+  </v-card>
 </template>
 
 <style scoped>
