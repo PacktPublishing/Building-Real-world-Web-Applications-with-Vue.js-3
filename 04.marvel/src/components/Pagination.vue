@@ -7,7 +7,7 @@ const props = defineProps<{
 }>();
 
 const isOnFirstPage = props.currentPage === 0;
-const isOnLastPage = props.currentPage === props.totalPages;
+const isOnLastPage = props.currentPage === props.totalPages - 1;
 </script>
 <template>
     <nav v-if="totalPages > 1" class="flex justify-center my-8">
